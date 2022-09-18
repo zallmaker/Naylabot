@@ -141,7 +141,7 @@ let [x2] = ownerNumber
 reply("https://wa.me/" + x2.split("@")[0])
 break
 
-case 'waifu':case 'lick':case 'kiss':case 'awoo':case 'hug':case 'cry':case 'cuddle':case 'bully':case 'megumin':case 'shinobu':case 'neko':case 'slap':case 'kick':case 'wink':case 'dance':case 'poke':case 'glomp':case 'bite':case 'nom':case 'handhold':case 'highfive':case 'wave':case 'smile':case 'yeet':case 'bonk':case 'smug':case 'pat':
+case 'waifu':case 'lick':case 'kiss':case 'awoo':case 'hug':case 'cry':case 'cuddle':case 'bully':case 'megumin':case 'shinobu':case 'neko':case 'slap':case 'metuo':case 'wink':case 'dance':case 'poke':case 'glomp':case 'bite':case 'nom':case 'handhold':case 'highfive':case 'wave':case 'smile':case 'yeet':case 'bonk':case 'smug':case 'pat':
 if (cekUser("id", sender) == null) return reply("Kamu belum terdaftar di database bot, Silahkan daftar terlebih dahulu, gunakan command #daftar")
 reply("[❗] SEDANG DIPROSES")
 fetchJson(`https://api.waifu.pics/sfw/${command}`).then(x => {
@@ -210,7 +210,7 @@ case 'chatbot':
 if (cekUser("id", sender) == null) return reply("Kamu belum terdaftar di database bot, Silahkan daftar terlebih dahulu, gunakan command #daftar")
 if (!q) return reply("Masukkan Text chat, contoh? halo kawan")
 const x8 = await fetchJson(`https://api.popcat.xyz/translate?to=en&text=${q}`)
-const x9 = await fetchJson(`https://api.popcat.xyz/chatbot?msg=${x8.translated}&owner=Rimurubotz&botname=Rimurubot`)
+const x9 = await fetchJson(`https://api.popcat.xyz/chatbot?msg=${x8.translated}&owner=Zall Makerz&botname=slebew`)
 const x10 = await fetchJson(`https://api.popcat.xyz/translate?to=id&text=${x9.response}`)
 reply(x10.translated)
 break
@@ -464,7 +464,7 @@ if (nay.message.extendedTextMessage === undefined || nay.message.extendedTextMes
 const mention = nay.message.extendedTextMessage.contextInfo.mentionedJid;
 await nayla.groupParticipantsUpdate(from, mention,"demote");
 break
-case 'add':
+case 'tambahkan':
 if (cekUser("id", sender) == null) return reply("Kamu belum terdaftar di database bot, Silahkan daftar terlebih dahulu, gunakan command #daftar")
 if (!isGroup) return reply("ONLY GROUP");
 if (!isGroupAdmins) return reply("ONLY ADMIN");
@@ -473,7 +473,7 @@ if (!q) return reply("Masukan number yang ingin ditambahkan di group\nex: !add 6
 topnumberor = `${args[0].replace(/ /g, '')}@s.whatsapp.net`
 await nayla.groupParticipantsUpdate(from, [topnumberor],"add")
 break
-case 'kick':
+case 'metuo':
 if (cekUser("id", sender) == null) return reply("Kamu belum terdaftar di database bot, Silahkan daftar terlebih dahulu, gunakan command #daftar")
 if (!isGroup) return reply("ONLY GROUP");
 if (!isGroupAdmins) return reply("ONLY ADMIN");
@@ -600,7 +600,7 @@ if (cekUser("id", sender) == null) return reply("Kamu belum terdaftar di databas
 reply(cekStorage("cmd","get",args[0],"mess"))
 break 
 
-case 'antilink':
+case 'kasilink':
 if (cekUser("id", sender) == null) return reply("Kamu belum terdaftar di database bot, Silahkan daftar terlebih dahulu, gunakan command #daftar")
 if (!isGroup) return reply("ONLY GROUP");
 if (!isGroupAdmins) return reply("ONLY ADMIN");

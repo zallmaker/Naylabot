@@ -1,9 +1,9 @@
 # BOTZ36
 
-Youtube: RIMURUBOTZ
+Youtube: 𝐙𝐀𝐋𝐋 𝐁𝐎𝐓
 
-Instagram: RIMURUBOTZ
+Instagram: 𝐙𝐀𝐋𝐋 𝐁𝐎𝐓
 
-Whatsapp: 082347260729
+Whatsapp: 0895330006855
 
 Notes: Tap Star nya donk bang😅
